@@ -84,12 +84,20 @@
         "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/main/res/drawable/photo_background_protection.xml"
     },
     {
+        "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/drawable/design_fab_background.xml"
+    },
+    {
         "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
         "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_full_material.xml"
     },
     {
         "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/drawable/design_snackbar_background.xml"
     },
     {
         "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
@@ -108,12 +116,12 @@
         "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_radio_material.xml"
-    },
-    {
         "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
         "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_radio_material.xml"
     },
     {
         "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
