@@ -55,8 +55,6 @@ MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioPro
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
@@ -65,6 +63,7 @@ MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioPro
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.github.bluejamesbond:textjustify-android:2.1.6] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.github.bluejamesbond/textjustify-android/2.1.6/AndroidManifest.xml:40:5-20
 	android:label
 		ADDED from /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/main/AndroidManifest.xml:14:9-41
 	android:allowBackup
@@ -78,7 +77,7 @@ ADDED from /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/m
 	android:label
 		ADDED from /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/main/AndroidManifest.xml:19:13-45
 	android:theme
-		ADDED from /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/main/AndroidManifest.xml:20:13-47
+		ADDED from /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/main/AndroidManifest.xml:20:13-52
 	android:name
 		ADDED from /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/main/AndroidManifest.xml:18:13-51
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
@@ -161,9 +160,7 @@ MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioPro
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [jp.wasabeef:recyclerview-animators:2.2.3] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/jp.wasabeef/recyclerview-animators/2.2.3/AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:appcompat-v7:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
@@ -171,7 +168,9 @@ MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioPro
 MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.github.bluejamesbond:textjustify-android:2.1.6] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.github.bluejamesbond/textjustify-android/2.1.6/AndroidManifest.xml:36:5-38:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] /home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion

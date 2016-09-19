@@ -6,14 +6,13 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="128dp"
+        android:layout_height="?actionBarSize"
         android:background="?colorPrimary"
-        android:id="@+id/app_bar_layout"
-        android:elevation="4dp">
+        android:id="@+id/app_bar_layout">
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:layout_scrollFlags="scroll|enterAlways"
             android:layout_marginLeft="@dimen/list_toolbar_side_margin"
             android:layout_marginRight="@dimen/list_toolbar_side_margin"
             android:layout_width="match_parent"

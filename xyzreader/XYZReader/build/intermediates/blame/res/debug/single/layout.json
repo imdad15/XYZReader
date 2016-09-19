@@ -52,16 +52,16 @@
         "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/main/res/layout/activity_article_list.xml"
     },
     {
-        "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
+        "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/list_item_article.xml",
         "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/main/res/layout/list_item_article.xml"
     },
     {
-        "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
@@ -110,6 +110,10 @@
     {
         "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
         "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/app_bar_layout.xml",
+        "source": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/main/res/layout/app_bar_layout.xml"
     },
     {
         "merged": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",

@@ -520,9 +520,28 @@
                     "startLine": 29,
                     "startColumn": 4,
                     "startOffset": 1809,
-                    "endLine": 32,
+                    "endColumn": 49,
+                    "endOffset": 1854
+                },
+                "from": {
+                    "file": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 382,
+                        "endColumn": 49,
+                        "endOffset": 427
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1859,
+                    "endLine": 33,
                     "endColumn": 12,
-                    "endOffset": 1986
+                    "endOffset": 2036
                 },
                 "from": {
                     "file": "/home/imdad/AndroidStudioProjects/XYZReader/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",

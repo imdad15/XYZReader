@@ -22,9 +22,18 @@
         <item name="colorPrimary">@color/material_deep_orange_500</item>
     </style>
 
+    <style name="Theme.Bacon.Home"/>
+
     <style name="Theme.Bacon.Detail" parent="@style/Theme.Bacon">
         <item name="colorAccent">@color/color_accent</item>
+    </style>
+    
+    <style name="collapsed_title">
+        <item name="android:textSize">18sp</item>
+    </style>
 
+    <style name="expanded_title">
+        <item name="android:textSize">0sp</item>
     </style>
 
 </resources>

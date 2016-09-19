@@ -1,5 +1,6 @@
 package com.example.xyzreader.ui;
 
+import android.app.ActivityOptions;
 import android.app.LoaderManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -7,8 +8,11 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
@@ -19,6 +23,9 @@ import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.OvershootInterpolator;
 import android.widget.TextView;
 
 import com.android.volley.VolleyError;
@@ -28,6 +35,13 @@ import com.example.xyzreader.Utils;
 import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.ItemsContract;
 import com.example.xyzreader.data.UpdaterService;
+
+import jp.wasabeef.recyclerview.adapters.SlideInBottomAnimationAdapter;
+import jp.wasabeef.recyclerview.animators.FadeInUpAnimator;
+import jp.wasabeef.recyclerview.animators.FlipInBottomXAnimator;
+import jp.wasabeef.recyclerview.animators.OvershootInLeftAnimator;
+import jp.wasabeef.recyclerview.animators.SlideInRightAnimator;
+import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 
 /**
  * An activity representing a list of Articles. This activity has different presentations for
@@ -40,6 +54,7 @@ public class ArticleListActivity extends AppCompatActivity implements
 
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
+
     //Utils utils = new Utils();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +102,7 @@ public class ArticleListActivity extends AppCompatActivity implements
             if (UpdaterService.BROADCAST_ACTION_STATE_CHANGE.equals(intent.getAction())) {
                 mIsRefreshing = intent.getBooleanExtra(UpdaterService.EXTRA_REFRESHING, false);
                 updateRefreshingUI();
-                Log.d("TAG","isRefreshing->"+mIsRefreshing);
+                Log.d("TAG", "isRefreshing->" + mIsRefreshing);
             }
         }
     };
@@ -105,11 +120,11 @@ public class ArticleListActivity extends AppCompatActivity implements
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         Adapter adapter = new Adapter(cursor);
         adapter.setHasStableIds(true);
-        mRecyclerView.setAdapter(adapter);
         int columnCount = getResources().getInteger(R.integer.list_column_count);
         StaggeredGridLayoutManager sglm =
                 new StaggeredGridLayoutManager(columnCount, StaggeredGridLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(sglm);
+        mRecyclerView.setAdapter(adapter);
     }
 
     @Override
@@ -137,11 +152,12 @@ public class ArticleListActivity extends AppCompatActivity implements
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(mIsRefreshing) {
-                        Snackbar.make(parent,"Refreshing data. Please wait!",Snackbar.LENGTH_SHORT).show();
-                    }else{
-                        startActivity(new Intent(Intent.ACTION_VIEW,
-                                ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
+                    if (mIsRefreshing) {
+                        Snackbar.make(parent, "Refreshing data. Please wait!", Snackbar.LENGTH_SHORT).show();
+                    } else {
+
+                            startActivity(new Intent(Intent.ACTION_VIEW,
+                                            ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
                     }
                 }
             });
@@ -164,22 +180,23 @@ public class ArticleListActivity extends AppCompatActivity implements
             imageLoader.get(thumbURL, new ImageLoader.ImageListener() {
                 @Override
                 public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
-                       if(imageContainer.getBitmap()!=null) {
-                           Palette palette = Palette.from(imageContainer.getBitmap()).clearFilters().generate();
-                           Palette.Swatch swatch = Utils.processPalette(palette);
-                           if(swatch!=null) {
-                               holder.titleView.setTextColor(swatch.getBodyTextColor());
-                               holder.subtitleView.setTextColor(swatch.getBodyTextColor());
-                               holder.dateView.setTextColor(swatch.getBodyTextColor());
-                               holder.cardView.setCardBackgroundColor(swatch.getRgb());
-                           }
-                       }
+                    if (imageContainer.getBitmap() != null) {
+                        Palette palette = Palette.from(imageContainer.getBitmap()).clearFilters().generate();
+                        Palette.Swatch swatch = Utils.processPalette(palette);
+                        if (swatch != null) {
+                            holder.titleView.setTextColor(swatch.getBodyTextColor());
+                            holder.subtitleView.setTextColor(swatch.getBodyTextColor());
+                            holder.dateView.setTextColor(swatch.getBodyTextColor());
+                            holder.cardView.setCardBackgroundColor(swatch.getRgb());
+                        }
+                    }
                 }
+
                 @Override
                 public void onErrorResponse(VolleyError volleyError) {
                 }
             });
-            holder.thumbnailView.setImageUrl(thumbURL,imageLoader);
+            holder.thumbnailView.setImageUrl(thumbURL, imageLoader);
             holder.thumbnailView.setAspectRatio(mCursor.getFloat(ArticleLoader.Query.ASPECT_RATIO));
         }
 
@@ -201,7 +218,7 @@ public class ArticleListActivity extends AppCompatActivity implements
             thumbnailView = (DynamicHeightNetworkImageView) view.findViewById(R.id.thumbnail);
             titleView = (TextView) view.findViewById(R.id.article_title);
             subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
-            dateView = (TextView)view.findViewById(R.id.article_date);
+            dateView = (TextView) view.findViewById(R.id.article_date);
             cardView = (CardView) view.findViewById(R.id.article_card);
         }
     }

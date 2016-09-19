@@ -73,7 +73,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <color name="photo_placeholder">#ccc</color>
+    <color name="placeholder">#ccc</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -117,7 +117,7 @@
     <declare-styleable name="CoordinatorLayout"><attr format="reference" name="keylines"/><attr format="reference" name="statusBarBackground"/></declare-styleable>
     <declare-styleable name="CoordinatorLayout_LayoutParams"><attr name="android:layout_gravity"/><attr format="string" name="layout_behavior"/><attr format="reference" name="layout_anchor"/><attr format="integer" name="layout_keyline"/><attr name="layout_anchorGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
     <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="color" name="textColorError"/></declare-styleable>
-    <declare-styleable name="DrawInsetsFrameLayout"><attr format="color|reference" name="insetBackground"/></declare-styleable>
+    <declare-styleable name="DocumentView"><attr format="dimension" name="documentView_insetPadding"/><attr format="dimension" name="documentView_insetPaddingLeft"/><attr format="dimension" name="documentView_insetPaddingRight"/><attr format="dimension" name="documentView_insetPaddingTop"/><attr format="dimension" name="documentView_insetPaddingBottom"/><attr format="dimension" name="documentView_offsetX"/><attr format="dimension" name="documentView_offsetY"/><attr format="float" name="documentView_wordSpacingMultiplier"/><attr format="float" name="documentView_lineHeightMultiplier"/><attr format="boolean" name="documentView_reverse"/><attr format="integer" name="documentView_maxLines"/><attr format="string" name="documentView_hyphen"/><attr format="enum" name="documentView_textAlignment"><enum name="left" value="0"/><enum name="right" value="1"/><enum name="justified" value="2"/><enum name="center" value="3"/></attr><attr format="dimension" name="documentView_textSize"/><attr format="color" name="documentView_textColor"/><attr format="boolean" name="documentView_antialias"/><attr format="string" name="documentView_text"/><attr format="boolean" name="documentView_textSubPixel"/><attr format="string" name="documentView_textTypefacePath"/><attr format="integer" name="documentView_textStyle"><flag name="plain" value="0"/><flag name="bold" value="1"/><flag name="underline" value="2"/><flag name="strikeThru" value="4"/></attr><attr format="enum" name="documentView_textFormat"><enum name="plain" value="0"/><enum name="formatted" value="1"/></attr><attr format="enum" name="documentView_cacheConfig"><enum name="no_cache" value="0"/><enum name="auto_quality" value="1"/><enum name="low_quality" value="2"/><enum name="high_quality" value="3"/><enum name="grayscale" value="4"/></attr><attr format="reference" name="documentView_progressBar"/><attr format="integer" name="documentView_fadeInAnimationStepDelay"/><attr format="integer" name="documentView_fadeInDuration"/><attr format="boolean" name="documentView_disallowInterceptTouch"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/><attr format="boolean" name="useCompatPadding"/></declare-styleable>
     <declare-styleable name="ForegroundLinearLayout"><attr name="android:foreground"/><attr name="android:foregroundGravity"/><attr format="boolean" name="foregroundInsidePadding"/></declare-styleable>
@@ -249,15 +249,15 @@
     <dimen name="detail_body_top_margin">16dp</dimen>
     <dimen name="detail_card_max_width">10000dp</dimen>
     <dimen name="detail_card_top_margin">@dimen/detail_photo_height</dimen>
-    <dimen name="detail_inner_horiz_margin">16dp</dimen>
+    <dimen name="detail_inner_horiz_margin">32dp</dimen>
     <dimen name="detail_metabar_title_bottom_padding">4dp</dimen>
     <dimen name="detail_metabar_vert_padding">16dp</dimen>
     <dimen name="detail_photo_height">304dp</dimen>
     <dimen name="detail_title_text_size">32sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <dimen name="fab_elevation">2dp</dimen>
-    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
     <dimen name="fab_press_translation_z">6dp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
@@ -267,9 +267,11 @@
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
     <dimen name="list_side_margin">4dp</dimen>
     <dimen name="list_toolbar_side_margin">0dp</dimen>
+    <dimen name="max_height">256dp</dimen>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
+    <dimen name="overlap">0dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item format="float" name="detail_body_line_spacing_multiplier" type="fraction">1.25</item>
     <item name="action_bar_activity_content" type="id"/>
@@ -1576,8 +1578,8 @@
     </style>
     <style name="Theme.Bacon.Detail" parent="@style/Theme.Bacon">
         <item name="colorAccent">@color/color_accent</item>
-
     </style>
+    <style name="Theme.Bacon.Home"/>
     <style name="Theme.Design" parent="Theme.AppCompat">
         <item name="textColorError">@color/design_textinput_error_color_dark</item>
     </style>
@@ -1756,5 +1758,11 @@
         <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
         <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
         <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow</item>
+    </style>
+    <style name="collapsed_title">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="expanded_title">
+        <item name="android:textSize">0sp</item>
     </style>
 </resources>
